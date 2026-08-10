@@ -83,15 +83,21 @@
 ### Задание 2
 
 2.1. Примеры команд резервирования и восстановления
+
     Бэкап в текстовый SQL-файл:
+
 ``` 
 pg_dump -U postgres -d mydb > backup.sql
 ```
+
     Восстановление :
+
 ``` 
 psql -U postgres -d newdb < backup.sql
 ```
+
     Бэкап в кастомный формат (рекомендуется):
+    
 ``` 
 pg_dump -Fc -U postgres -d mydb > mydb.dump  
 ```
